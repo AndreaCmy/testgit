@@ -125,12 +125,13 @@
     <module>vo</module>
     <module>framework</module>
   </modules>
+
   <parent>
       <groupId>com.cmy.base</groupId>
       <artifactId>base</artifactId>
-      <relativePath>../base/pom.xml</relativePath>
       <version>1.1-SNAPSHOT</version>
   </parent>
+
   <build>
     <finalName>zen</finalName>
     <sourceDirectory>src/main/java</sourceDirectory>
