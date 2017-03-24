@@ -8,8 +8,12 @@
   http://www.springframework.org/schema/context 
   http://www.springframework.org/schema/context/spring-context-3.0.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
+    <!--spring mvc 配置 -->
 	<mvc:annotation-driven />
-	<mvc:default-servlet-handler/>
+    <mvc:default-servlet-handler/>
+    <mvc:resources location="/staticresource/images/" mapping="/images/**" />
+    <mvc:resources location="/staticresource/css/" mapping="/css/**" />
+    <mvc:resources location="/staticresource/js/" mapping="/js/**" />
 
 	<!-- 引入属性文件,config.properties位于src/main/resources目录下 -->
 	<context:property-placeholder location="classpath:config.properties" />

@@ -8,10 +8,10 @@
 
    <context-param>
     <param-name>log4jConfigLocation</param-name>
-    <param-value>classpath:log4j.properties</param-value>
+    <param-value>classpath:logback.xml</param-value>
   </context-param>
     <listener>
-    <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
+    <listener-class>ch.qos.logback.ext.spring.web.LogbackConfigListener</listener-class>
   </listener>
   <servlet>
     <servlet-name>springmvc</servlet-name>
