@@ -1,30 +1,81 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-	  <groupId>com.cmy.zen</groupId>
-	  <artifactId>zen</artifactId>
-	  <version>1.1-SNAPSHOT</version>
-  </parent>
-  <groupId>com.cmy.zen.service.impl</groupId>
-  <artifactId>service-impl</artifactId>
-  <name>service.impl</name>
-  
-   <dependencies>
-  	<dependency>
-  		<groupId>com.cmy.zen.dao</groupId>
-  		<artifactId>dao</artifactId>
-  		<version>${com.cmy.zen.dao.version}</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>com.cmy.zen.vo</groupId>
-  		<artifactId>vo</artifactId>
-  		<version>${com.cmy.zen.vo.version}</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>com.cmy.zen.service</groupId>
-  		<artifactId>service</artifactId>
-  		<version>${com.cmy.zen.service.version}</version>
-  	</dependency>
-  </dependencies>
-  
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.cmy.zen</groupId>
+        <artifactId>zen</artifactId>
+        <version>1.1-SNAPSHOT</version>
+    </parent>
+    <groupId>com.cmy.zen.service.impl</groupId>
+    <artifactId>service-impl</artifactId>
+    <name>service.impl</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>net.sf.dozer</groupId>
+            <artifactId>dozer</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.cmy.zen.dao</groupId>
+            <artifactId>dao</artifactId>
+            <version>${com.cmy.zen.dao.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.cmy.zen.vo</groupId>
+            <artifactId>vo</artifactId>
+            <version>${com.cmy.zen.vo.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.cmy.zen.service</groupId>
+            <artifactId>service</artifactId>
+            <version>${com.cmy.zen.service.version}</version>
+        </dependency>
+
+
+        <!-- spring -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-support</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
 </project>

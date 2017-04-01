@@ -1,3 +1,6 @@
 /zen/web/target
 /zen/vo/target
 /zen/vo/*.iml
+target
+*.iml
+.metadata/

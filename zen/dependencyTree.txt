@@ -1,0 +1,401 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] zen Maven Webapp
+[INFO] app
+[INFO] vo
+[INFO] service
+[INFO] controller
+[INFO] framework
+[INFO] model
+[INFO] dao
+[INFO] service.impl
+[INFO] dao.impl
+[INFO] web
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building zen Maven Webapp 1.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ zen ---
+[INFO] com.cmy.zen:zen:pom:1.1-SNAPSHOT
+[INFO] +- org.slf4j:slf4j-api:jar:1.7.5:compile
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.5:compile
+[INFO] +- ch.qos.logback:logback-classic:jar:1.0.13:compile
+[INFO] |  \- ch.qos.logback:logback-core:jar:1.0.13:compile
+[INFO] \- org.logback-extensions:logback-ext-spring:jar:0.1.1:compile
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building app 1.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ app ---
+[INFO] com.cmy.zen.app:app:war:1.1-SNAPSHOT
+[INFO] +- org.slf4j:slf4j-api:jar:1.7.5:compile
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.5:compile
+[INFO] +- ch.qos.logback:logback-classic:jar:1.0.13:compile
+[INFO] |  \- ch.qos.logback:logback-core:jar:1.0.13:compile
+[INFO] \- org.logback-extensions:logback-ext-spring:jar:0.1.1:compile
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building vo 1.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ vo ---
+[INFO] com.cmy.zen.vo:vo:jar:1.1-SNAPSHOT
+[INFO] +- org.slf4j:slf4j-api:jar:1.7.5:compile
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.5:compile
+[INFO] +- ch.qos.logback:logback-classic:jar:1.0.13:compile
+[INFO] |  \- ch.qos.logback:logback-core:jar:1.0.13:compile
+[INFO] \- org.logback-extensions:logback-ext-spring:jar:0.1.1:compile
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building service 1.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ service ---
+[INFO] com.cmy.zen.service:service:jar:1.1-SNAPSHOT
+[INFO] +- com.cmy.zen.vo:vo:jar:1.1-SNAPSHOT:compile
+[INFO] +- org.slf4j:slf4j-api:jar:1.7.5:compile
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.5:compile
+[INFO] +- ch.qos.logback:logback-classic:jar:1.0.13:compile
+[INFO] |  \- ch.qos.logback:logback-core:jar:1.0.13:compile
+[INFO] \- org.logback-extensions:logback-ext-spring:jar:0.1.1:compile
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building controller 1.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ controller ---
+[INFO] com.cmy.zen.web.controller:controller:jar:1.1-SNAPSHOT
+[INFO] +- com.cmy.zen.service:service:jar:1.1-SNAPSHOT:compile
+[INFO] +- com.cmy.zen.vo:vo:jar:1.1-SNAPSHOT:compile
+[INFO] +- org.eclipse.jgit:org.eclipse.jgit:jar:4.5.0.201609210915-r:compile
+[INFO] |  +- com.jcraft:jsch:jar:0.1.53:compile
+[INFO] |  +- com.googlecode.javaewah:JavaEWAH:jar:0.7.9:compile
+[INFO] |  \- org.apache.httpcomponents:httpclient:jar:4.3.6:compile
+[INFO] |     +- org.apache.httpcomponents:httpcore:jar:4.3.3:compile
+[INFO] |     +- commons-logging:commons-logging:jar:1.1.3:compile
+[INFO] |     \- commons-codec:commons-codec:jar:1.6:compile
+[INFO] +- org.springframework:spring-web:jar:4.2.5.RELEASE:compile
+[INFO] |  +- org.springframework:spring-aop:jar:4.2.5.RELEASE:compile
+[INFO] |  |  \- aopalliance:aopalliance:jar:1.0:compile
+[INFO] |  +- org.springframework:spring-beans:jar:4.2.5.RELEASE:compile
+[INFO] |  +- org.springframework:spring-context:jar:4.2.5.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-expression:jar:4.2.5.RELEASE:compile
+[INFO] |  \- org.springframework:spring-core:jar:4.2.5.RELEASE:compile
+[INFO] +- org.apache.struts:struts-annotations:jar:1.0.6:compile
+[INFO] |  \- org.freemarker:freemarker:jar:2.3.23:compile
+[INFO] +- org.apache.struts:struts2-convention-plugin:jar:2.3.24.1:compile
+[INFO] |  +- org.apache.commons:commons-lang3:jar:3.2:compile
+[INFO] |  \- org.apache.struts:struts2-core:jar:2.3.24.1:compile
+[INFO] |     +- commons-fileupload:commons-fileupload:jar:1.3.1:compile
+[INFO] |     \- commons-io:commons-io:jar:2.2:compile
+[INFO] +- org.apache.struts:struts2-spring-plugin:jar:2.3.24.1:compile
+[INFO] +- org.apache.struts.xwork:xwork-core:jar:2.3.24.1:compile
+[INFO] |  +- ognl:ognl:jar:3.0.6:compile
+[INFO] |  |  \- javassist:javassist:jar:3.11.0.GA:compile
+[INFO] |  +- asm:asm:jar:3.3:compile
+[INFO] |  \- asm:asm-commons:jar:3.3:compile
+[INFO] |     \- asm:asm-tree:jar:3.3:compile
+[INFO] +- org.slf4j:slf4j-api:jar:1.7.5:compile
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.5:compile
+[INFO] +- ch.qos.logback:logback-classic:jar:1.0.13:compile
+[INFO] |  \- ch.qos.logback:logback-core:jar:1.0.13:compile
+[INFO] \- org.logback-extensions:logback-ext-spring:jar:0.1.1:compile
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building framework 1.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ framework ---
+[INFO] com.cmy.zen.framework:framework:jar:1.1-SNAPSHOT
+[INFO] +- junit:junit:jar:4.12:compile
+[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.3:compile
+[INFO] +- org.springframework:spring-orm:jar:4.2.5.RELEASE:compile
+[INFO] |  \- org.springframework:spring-beans:jar:4.2.5.RELEASE:compile
+[INFO] +- org.springframework:spring-core:jar:4.2.5.RELEASE:compile
+[INFO] |  \- commons-logging:commons-logging:jar:1.2:compile
+[INFO] +- org.springframework:spring-jdbc:jar:4.2.5.RELEASE:compile
+[INFO] +- org.springframework:spring-web:jar:4.2.5.RELEASE:compile
+[INFO] +- org.springframework:spring-webmvc:jar:4.2.5.RELEASE:compile
+[INFO] |  \- org.springframework:spring-expression:jar:4.2.5.RELEASE:compile
+[INFO] +- org.springframework:spring-context:jar:4.2.5.RELEASE:compile
+[INFO] +- org.springframework:spring-aop:jar:4.2.5.RELEASE:compile
+[INFO] |  \- aopalliance:aopalliance:jar:1.0:compile
+[INFO] +- org.springframework:spring-tx:jar:4.2.5.RELEASE:compile
+[INFO] +- mysql:mysql-connector-java:jar:5.1.38:compile
+[INFO] +- org.aspectj:aspectjweaver:jar:1.8.8:compile
+[INFO] +- org.hibernate:hibernate-core:jar:5.1.0.Final:compile
+[INFO] |  +- org.jboss.logging:jboss-logging:jar:3.3.0.Final:compile
+[INFO] |  +- org.javassist:javassist:jar:3.20.0-GA:compile
+[INFO] |  +- antlr:antlr:jar:2.7.7:compile
+[INFO] |  +- org.apache.geronimo.specs:geronimo-jta_1.1_spec:jar:1.1.1:compile
+[INFO] |  +- org.jboss:jandex:jar:2.0.0.Final:compile
+[INFO] |  +- com.fasterxml:classmate:jar:1.3.0:compile
+[INFO] |  +- dom4j:dom4j:jar:1.6.1:compile
+[INFO] |  |  \- xml-apis:xml-apis:jar:1.0.b2:compile
+[INFO] |  \- org.hibernate.common:hibernate-commons-annotations:jar:5.0.1.Final:compile
+[INFO] +- org.hibernate:hibernate-c3p0:jar:5.1.0.Final:compile
+[INFO] |  \- com.mchange:c3p0:jar:0.9.5.2:compile
+[INFO] |     \- com.mchange:mchange-commons-java:jar:0.2.11:compile
+[INFO] +- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:jar:1.0.0.Final:compile
+[INFO] +- org.slf4j:slf4j-api:jar:1.7.5:compile
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.5:compile
+[INFO] +- ch.qos.logback:logback-classic:jar:1.0.13:compile
+[INFO] |  \- ch.qos.logback:logback-core:jar:1.0.13:compile
+[INFO] \- org.logback-extensions:logback-ext-spring:jar:0.1.1:compile
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building model 1.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ model ---
+[INFO] com.cmy.zen.model:model:jar:1.1-SNAPSHOT
+[INFO] +- org.hibernate:hibernate-core:jar:5.1.0.Final:compile
+[INFO] |  +- org.jboss.logging:jboss-logging:jar:3.3.0.Final:compile
+[INFO] |  +- org.javassist:javassist:jar:3.20.0-GA:compile
+[INFO] |  +- antlr:antlr:jar:2.7.7:compile
+[INFO] |  +- org.apache.geronimo.specs:geronimo-jta_1.1_spec:jar:1.1.1:compile
+[INFO] |  +- org.jboss:jandex:jar:2.0.0.Final:compile
+[INFO] |  +- com.fasterxml:classmate:jar:1.3.0:compile
+[INFO] |  +- dom4j:dom4j:jar:1.6.1:compile
+[INFO] |  |  \- xml-apis:xml-apis:jar:1.0.b2:compile
+[INFO] |  \- org.hibernate.common:hibernate-commons-annotations:jar:5.0.1.Final:compile
+[INFO] +- org.hibernate:hibernate-c3p0:jar:5.1.0.Final:compile
+[INFO] |  \- com.mchange:c3p0:jar:0.9.5.2:compile
+[INFO] |     \- com.mchange:mchange-commons-java:jar:0.2.11:compile
+[INFO] +- org.slf4j:slf4j-api:jar:1.7.5:compile
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.5:compile
+[INFO] +- ch.qos.logback:logback-classic:jar:1.0.13:compile
+[INFO] |  \- ch.qos.logback:logback-core:jar:1.0.13:compile
+[INFO] \- org.logback-extensions:logback-ext-spring:jar:0.1.1:compile
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building dao 1.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ dao ---
+[INFO] com.cmy.zen.dao:dao:jar:1.1-SNAPSHOT
+[INFO] +- com.cmy.zen.model:model:jar:1.1-SNAPSHOT:compile
+[INFO] |  +- org.hibernate:hibernate-core:jar:5.1.0.Final:compile
+[INFO] |  |  +- org.jboss.logging:jboss-logging:jar:3.3.0.Final:compile
+[INFO] |  |  +- org.javassist:javassist:jar:3.20.0-GA:compile
+[INFO] |  |  +- antlr:antlr:jar:2.7.7:compile
+[INFO] |  |  +- org.apache.geronimo.specs:geronimo-jta_1.1_spec:jar:1.1.1:compile
+[INFO] |  |  +- org.jboss:jandex:jar:2.0.0.Final:compile
+[INFO] |  |  +- com.fasterxml:classmate:jar:1.3.0:compile
+[INFO] |  |  +- dom4j:dom4j:jar:1.6.1:compile
+[INFO] |  |  |  \- xml-apis:xml-apis:jar:1.0.b2:compile
+[INFO] |  |  \- org.hibernate.common:hibernate-commons-annotations:jar:5.0.1.Final:compile
+[INFO] |  \- org.hibernate:hibernate-c3p0:jar:5.1.0.Final:compile
+[INFO] |     \- com.mchange:c3p0:jar:0.9.5.2:compile
+[INFO] |        \- com.mchange:mchange-commons-java:jar:0.2.11:compile
+[INFO] +- org.slf4j:slf4j-api:jar:1.7.5:compile
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.5:compile
+[INFO] +- ch.qos.logback:logback-classic:jar:1.0.13:compile
+[INFO] |  \- ch.qos.logback:logback-core:jar:1.0.13:compile
+[INFO] \- org.logback-extensions:logback-ext-spring:jar:0.1.1:compile
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building service.impl 1.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ service-impl ---
+[INFO] com.cmy.zen.service.impl:service-impl:jar:1.1-SNAPSHOT
+[INFO] +- net.sf.dozer:dozer:jar:5.5.1:compile
+[INFO] |  +- commons-beanutils:commons-beanutils:jar:1.9.1:compile
+[INFO] |  |  \- commons-collections:commons-collections:jar:3.2.1:compile
+[INFO] |  \- org.apache.commons:commons-lang3:jar:3.2.1:compile
+[INFO] +- com.cmy.zen.dao:dao:jar:1.1-SNAPSHOT:compile
+[INFO] |  \- com.cmy.zen.model:model:jar:1.1-SNAPSHOT:compile
+[INFO] |     +- org.hibernate:hibernate-core:jar:5.1.0.Final:compile
+[INFO] |     |  +- org.jboss.logging:jboss-logging:jar:3.3.0.Final:compile
+[INFO] |     |  +- org.javassist:javassist:jar:3.20.0-GA:compile
+[INFO] |     |  +- antlr:antlr:jar:2.7.7:compile
+[INFO] |     |  +- org.apache.geronimo.specs:geronimo-jta_1.1_spec:jar:1.1.1:compile
+[INFO] |     |  +- org.jboss:jandex:jar:2.0.0.Final:compile
+[INFO] |     |  +- com.fasterxml:classmate:jar:1.3.0:compile
+[INFO] |     |  +- dom4j:dom4j:jar:1.6.1:compile
+[INFO] |     |  |  \- xml-apis:xml-apis:jar:1.0.b2:compile
+[INFO] |     |  \- org.hibernate.common:hibernate-commons-annotations:jar:5.0.1.Final:compile
+[INFO] |     \- org.hibernate:hibernate-c3p0:jar:5.1.0.Final:compile
+[INFO] |        \- com.mchange:c3p0:jar:0.9.5.2:compile
+[INFO] |           \- com.mchange:mchange-commons-java:jar:0.2.11:compile
+[INFO] +- com.cmy.zen.vo:vo:jar:1.1-SNAPSHOT:compile
+[INFO] +- com.cmy.zen.service:service:jar:1.1-SNAPSHOT:compile
+[INFO] +- org.springframework:spring-orm:jar:4.2.5.RELEASE:compile
+[INFO] |  \- org.springframework:spring-beans:jar:4.2.5.RELEASE:compile
+[INFO] +- org.springframework:spring-webmvc:jar:4.2.5.RELEASE:compile
+[INFO] |  \- org.springframework:spring-expression:jar:4.2.5.RELEASE:compile
+[INFO] +- org.springframework:spring-core:jar:4.2.5.RELEASE:compile
+[INFO] |  \- commons-logging:commons-logging:jar:1.2:compile
+[INFO] +- org.springframework:spring-jdbc:jar:4.2.5.RELEASE:compile
+[INFO] +- org.springframework:spring-web:jar:4.2.5.RELEASE:compile
+[INFO] +- org.springframework:spring-context:jar:4.2.5.RELEASE:compile
+[INFO] +- org.springframework:spring-context-support:jar:4.2.5.RELEASE:compile
+[INFO] +- org.springframework:spring-aop:jar:4.2.5.RELEASE:compile
+[INFO] |  \- aopalliance:aopalliance:jar:1.0:compile
+[INFO] +- org.springframework:spring-tx:jar:4.2.5.RELEASE:compile
+[INFO] +- org.springframework:spring-test:jar:4.2.5.RELEASE:test
+[INFO] +- org.slf4j:slf4j-api:jar:1.7.5:compile
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.5:compile
+[INFO] +- ch.qos.logback:logback-classic:jar:1.0.13:compile
+[INFO] |  \- ch.qos.logback:logback-core:jar:1.0.13:compile
+[INFO] \- org.logback-extensions:logback-ext-spring:jar:0.1.1:compile
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building dao.impl 1.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ dao-impl ---
+[INFO] com.cmy.zen.dao.impl:dao-impl:jar:1.1-SNAPSHOT
+[INFO] +- com.cmy.zen.dao:dao:jar:1.1-SNAPSHOT:compile
+[INFO] |  \- com.cmy.zen.model:model:jar:1.1-SNAPSHOT:compile
+[INFO] +- com.cmy.zen.framework:framework:jar:1.1-SNAPSHOT:compile
+[INFO] |  +- junit:junit:jar:4.12:compile
+[INFO] |  |  \- org.hamcrest:hamcrest-core:jar:1.3:compile
+[INFO] |  +- org.springframework:spring-core:jar:4.2.5.RELEASE:compile
+[INFO] |  |  \- commons-logging:commons-logging:jar:1.2:compile
+[INFO] |  +- org.springframework:spring-jdbc:jar:4.2.5.RELEASE:compile
+[INFO] |  +- org.springframework:spring-web:jar:4.2.5.RELEASE:compile
+[INFO] |  +- org.springframework:spring-webmvc:jar:4.2.5.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-expression:jar:4.2.5.RELEASE:compile
+[INFO] |  +- org.springframework:spring-context:jar:4.2.5.RELEASE:compile
+[INFO] |  +- org.springframework:spring-aop:jar:4.2.5.RELEASE:compile
+[INFO] |  |  \- aopalliance:aopalliance:jar:1.0:compile
+[INFO] |  +- org.springframework:spring-tx:jar:4.2.5.RELEASE:compile
+[INFO] |  +- mysql:mysql-connector-java:jar:5.1.38:compile
+[INFO] |  +- org.aspectj:aspectjweaver:jar:1.8.8:compile
+[INFO] |  \- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:jar:1.0.0.Final:compile
+[INFO] +- org.springframework:spring-orm:jar:4.2.5.RELEASE:compile
+[INFO] |  \- org.springframework:spring-beans:jar:4.2.5.RELEASE:compile
+[INFO] +- org.hibernate:hibernate-core:jar:5.1.0.Final:compile
+[INFO] |  +- org.jboss.logging:jboss-logging:jar:3.3.0.Final:compile
+[INFO] |  +- org.javassist:javassist:jar:3.20.0-GA:compile
+[INFO] |  +- antlr:antlr:jar:2.7.7:compile
+[INFO] |  +- org.apache.geronimo.specs:geronimo-jta_1.1_spec:jar:1.1.1:compile
+[INFO] |  +- org.jboss:jandex:jar:2.0.0.Final:compile
+[INFO] |  +- com.fasterxml:classmate:jar:1.3.0:compile
+[INFO] |  +- dom4j:dom4j:jar:1.6.1:compile
+[INFO] |  |  \- xml-apis:xml-apis:jar:1.0.b2:compile
+[INFO] |  \- org.hibernate.common:hibernate-commons-annotations:jar:5.0.1.Final:compile
+[INFO] +- org.hibernate:hibernate-c3p0:jar:5.1.0.Final:compile
+[INFO] |  \- com.mchange:c3p0:jar:0.9.5.2:compile
+[INFO] |     \- com.mchange:mchange-commons-java:jar:0.2.11:compile
+[INFO] +- org.slf4j:slf4j-api:jar:1.7.5:compile
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.5:compile
+[INFO] +- ch.qos.logback:logback-classic:jar:1.0.13:compile
+[INFO] |  \- ch.qos.logback:logback-core:jar:1.0.13:compile
+[INFO] \- org.logback-extensions:logback-ext-spring:jar:0.1.1:compile
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building web 1.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ web ---
+[INFO] com.cmy.zen.web:web:war:1.1-SNAPSHOT
+[INFO] +- com.cmy.zen.web.controller:controller:jar:1.1-SNAPSHOT:compile
+[INFO] |  +- com.cmy.zen.vo:vo:jar:1.1-SNAPSHOT:compile
+[INFO] |  +- org.eclipse.jgit:org.eclipse.jgit:jar:4.5.0.201609210915-r:compile
+[INFO] |  |  +- com.jcraft:jsch:jar:0.1.53:compile
+[INFO] |  |  +- com.googlecode.javaewah:JavaEWAH:jar:0.7.9:compile
+[INFO] |  |  \- org.apache.httpcomponents:httpclient:jar:4.3.6:compile
+[INFO] |  |     +- org.apache.httpcomponents:httpcore:jar:4.3.3:compile
+[INFO] |  |     \- commons-codec:commons-codec:jar:1.6:compile
+[INFO] |  +- org.springframework:spring-web:jar:4.2.5.RELEASE:compile
+[INFO] |  +- org.apache.struts:struts-annotations:jar:1.0.6:compile
+[INFO] |  |  \- org.freemarker:freemarker:jar:2.3.23:compile
+[INFO] |  +- org.apache.struts:struts2-convention-plugin:jar:2.3.24.1:compile
+[INFO] |  |  +- org.apache.commons:commons-lang3:jar:3.2:compile
+[INFO] |  |  \- org.apache.struts:struts2-core:jar:2.3.24.1:compile
+[INFO] |  |     +- commons-fileupload:commons-fileupload:jar:1.3.1:compile
+[INFO] |  |     \- commons-io:commons-io:jar:2.2:compile
+[INFO] |  +- org.apache.struts:struts2-spring-plugin:jar:2.3.24.1:compile
+[INFO] |  \- org.apache.struts.xwork:xwork-core:jar:2.3.24.1:compile
+[INFO] |     +- ognl:ognl:jar:3.0.6:compile
+[INFO] |     |  \- javassist:javassist:jar:3.11.0.GA:compile
+[INFO] |     +- asm:asm:jar:3.3:compile
+[INFO] |     \- asm:asm-commons:jar:3.3:compile
+[INFO] |        \- asm:asm-tree:jar:3.3:compile
+[INFO] +- com.cmy.zen.framework:framework:jar:1.1-SNAPSHOT:compile
+[INFO] |  +- junit:junit:jar:4.12:compile
+[INFO] |  |  \- org.hamcrest:hamcrest-core:jar:1.3:compile
+[INFO] |  +- org.springframework:spring-orm:jar:4.2.5.RELEASE:compile
+[INFO] |  +- org.springframework:spring-core:jar:4.2.5.RELEASE:compile
+[INFO] |  |  \- commons-logging:commons-logging:jar:1.2:compile
+[INFO] |  +- org.springframework:spring-jdbc:jar:4.2.5.RELEASE:compile
+[INFO] |  +- org.springframework:spring-aop:jar:4.2.5.RELEASE:compile
+[INFO] |  |  \- aopalliance:aopalliance:jar:1.0:compile
+[INFO] |  +- org.springframework:spring-tx:jar:4.2.5.RELEASE:compile
+[INFO] |  +- mysql:mysql-connector-java:jar:5.1.38:compile
+[INFO] |  +- org.hibernate:hibernate-core:jar:5.1.0.Final:compile
+[INFO] |  |  +- org.jboss.logging:jboss-logging:jar:3.3.0.Final:compile
+[INFO] |  |  +- org.javassist:javassist:jar:3.20.0-GA:compile
+[INFO] |  |  +- antlr:antlr:jar:2.7.7:compile
+[INFO] |  |  +- org.apache.geronimo.specs:geronimo-jta_1.1_spec:jar:1.1.1:compile
+[INFO] |  |  +- org.jboss:jandex:jar:2.0.0.Final:compile
+[INFO] |  |  +- com.fasterxml:classmate:jar:1.3.0:compile
+[INFO] |  |  +- dom4j:dom4j:jar:1.6.1:compile
+[INFO] |  |  |  \- xml-apis:xml-apis:jar:1.0.b2:compile
+[INFO] |  |  \- org.hibernate.common:hibernate-commons-annotations:jar:5.0.1.Final:compile
+[INFO] |  +- org.hibernate:hibernate-c3p0:jar:5.1.0.Final:compile
+[INFO] |  |  \- com.mchange:c3p0:jar:0.9.5.2:compile
+[INFO] |  |     \- com.mchange:mchange-commons-java:jar:0.2.11:compile
+[INFO] |  \- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:jar:1.0.0.Final:compile
+[INFO] +- org.springframework:spring-context:jar:4.2.5.RELEASE:compile
+[INFO] |  +- org.springframework:spring-beans:jar:4.2.5.RELEASE:compile
+[INFO] |  \- org.springframework:spring-expression:jar:4.2.5.RELEASE:compile
+[INFO] +- org.springframework:spring-webmvc:jar:4.2.5.RELEASE:compile
+[INFO] +- org.springframework:spring-context-support:jar:4.2.5.RELEASE:compile
+[INFO] +- org.springframework:spring-test:jar:4.2.5.RELEASE:test
+[INFO] +- org.aspectj:aspectjweaver:jar:1.8.8:compile
+[INFO] +- com.cmy.zen.service:service:jar:1.1-SNAPSHOT:compile
+[INFO] +- com.cmy.zen.service.impl:service-impl:jar:1.1-SNAPSHOT:compile
+[INFO] |  \- net.sf.dozer:dozer:jar:5.5.1:compile
+[INFO] |     \- commons-beanutils:commons-beanutils:jar:1.9.1:compile
+[INFO] |        \- commons-collections:commons-collections:jar:3.2.1:compile
+[INFO] +- com.cmy.zen.dao:dao:jar:1.1-SNAPSHOT:compile
+[INFO] |  \- com.cmy.zen.model:model:jar:1.1-SNAPSHOT:compile
+[INFO] +- com.cmy.zen.dao.impl:dao-impl:jar:1.1-SNAPSHOT:compile
+[INFO] +- org.slf4j:slf4j-api:jar:1.7.5:compile
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.5:compile
+[INFO] +- ch.qos.logback:logback-classic:jar:1.0.13:compile
+[INFO] |  \- ch.qos.logback:logback-core:jar:1.0.13:compile
+[INFO] \- org.logback-extensions:logback-ext-spring:jar:0.1.1:compile
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] zen Maven Webapp ................................... SUCCESS [  2.387 s]
+[INFO] app ................................................ SUCCESS [  0.078 s]
+[INFO] vo ................................................. SUCCESS [  0.016 s]
+[INFO] service ............................................ SUCCESS [  0.046 s]
+[INFO] controller ......................................... SUCCESS [  0.438 s]
+[INFO] framework .......................................... SUCCESS [  0.156 s]
+[INFO] model .............................................. SUCCESS [  0.063 s]
+[INFO] dao ................................................ SUCCESS [  0.015 s]
+[INFO] service.impl ....................................... SUCCESS [  0.110 s]
+[INFO] dao.impl ........................................... SUCCESS [  0.109 s]
+[INFO] web ................................................ SUCCESS [  0.141 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.465 s
+[INFO] Finished at: 2017-04-01T17:48:49+08:00
+[INFO] Final Memory: 15M/220M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[ERROR] [ERROR] Some problems were encountered while processing the POMs:
+[ERROR] 'dependencies.dependency.version' for org.hibernate.javax.persistence:hibernate-jpa-2.0-api:jar is missing. @ com.cmy.zen.framework:framework:[unknown-version], D:\20git\my\zen\framework\pom.xml, line 68, column 19
+ @ 
+[ERROR] The build could not read 1 project -> [Help 1]
+[ERROR]   
+[ERROR]   The project com.cmy.zen.framework:framework:1.1-SNAPSHOT (D:\20git\my\zen\framework\pom.xml) has 1 error
+[ERROR]     'dependencies.dependency.version' for org.hibernate.javax.persistence:hibernate-jpa-2.0-api:jar is missing. @ com.cmy.zen.framework:framework:[unknown-version], D:\20git\my\zen\framework\pom.xml, line 68, column 19
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/ProjectBuildingException

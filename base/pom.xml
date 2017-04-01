@@ -26,9 +26,25 @@
 		<spring.version>4.2.5.RELEASE</spring.version>
 		<struts2.version>2.3.24.1</struts2.version>
 		<struts-annotations.version>1.0.6</struts-annotations.version>
+		<javax.persistence.version>1.0</javax.persistence.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
+		<!-- https://mvnrepository.com/artifact/junit/junit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+		</dependency>
+
+
+		 <!-- https://mvnrepository.com/artifact/javax.persistence/persistence-api -->
+            <dependency>
+                <groupId>javax.persistence</groupId>
+                <artifactId>persistence-api</artifactId>
+                <version>${javax.persistence.version}</version>
+            </dependency> 
+			
 			<dependency>
 				<groupId>com.cmy.zen.web.controller</groupId>
 				<artifactId>controller</artifactId>
@@ -171,7 +187,7 @@
 			<dependency>
 				<groupId>org.hibernate</groupId>
 				<artifactId>hibernate-core</artifactId>
-				<version>${hibernate.version}</version>
+				<version>${hibernate.version}</version>			 
 			</dependency>
 			<dependency>
 				<groupId>org.hibernate</groupId>

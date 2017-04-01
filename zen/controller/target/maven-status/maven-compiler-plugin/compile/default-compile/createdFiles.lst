@@ -1,2 +1,3 @@
 com\cmy\controller\ssh\HelloSpringMVC.class
 com\cmy\controller\ssh\TestAction.class
+com\cmy\controller\test\PrintABC.class
