@@ -84,19 +84,30 @@ public class RedBlackBST<T extends  Comparable<T>> {
     }
 
     //TODO 插入节点
-    private void insertNode(Node node){
+    private void insertNode(Node<T> node){
+        Node<T> pos = null;
         Node<T> root = this.getRoot();
         while(root != null){
-            int compare = root.getValue().compareTo(value);
+            pos = root;
+            int compare = root.getValue().compareTo(node.getValue());
             if(compare > 0){//root>value
                 root = root.getLeft();
             }else if(compare < 0){//root<value
                 root = root.getRight();
-            }else{
-                return root.getValue();
             }
         }//end while
-        return null;
+
+        node.setParent(pos);
+        if(pos != null){
+            int compare = pos.getValue().compareTo(node.getValue());
+            if(compare > 0){
+               pos.setLeft(node);
+            }else{
+                pos.setRight(node);
+            }
+        }else{
+            this.setRoot(node);
+        }
     }
     //TODO 修正节点
     private void fixUpNode(Node node){

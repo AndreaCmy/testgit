@@ -1,5 +1,7 @@
 package com.cmy.controller.test.thread;
 
+import com.cmy.controller.test.thread.memoizer.Computable;
+
 import java.math.BigInteger;
 
 /**

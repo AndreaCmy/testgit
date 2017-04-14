@@ -1,4 +1,4 @@
-package com.cmy.controller.test.thread;
+package com.cmy.controller.test.thread.memoizer;
 
 import java.util.concurrent.ExecutionException;
 

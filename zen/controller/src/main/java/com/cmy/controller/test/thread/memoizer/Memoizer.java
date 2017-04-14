@@ -1,6 +1,5 @@
-package com.cmy.controller.test.thread;
+package com.cmy.controller.test.thread.memoizer;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.*;
 
@@ -29,8 +28,8 @@ public class Memoizer<A,V> implements Computable<A,V> {
                 future = cache.putIfAbsent(arg, futureTask);
                 if(future == null){
                     future = futureTask;
-                    futureTask.run();
                 }
+                futureTask.run();
             }
             try {
                 return future.get();
