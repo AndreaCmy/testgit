@@ -23,7 +23,7 @@ public class SequentialPuzzleSolver<P,M> {
     private List<M> search(Node<P, M> pmNode) {
         if(!seen.contains(pmNode.pos)){
             seen.add(pmNode.pos);
-            if(pmPuzzle.isGoal(pmNode.pos){
+            if(pmPuzzle.isGoal(pmNode.pos)){
                 return pmNode.asMoveList();
             }
             for(M move:pmPuzzle.legalMoves(pmNode.pos)){
