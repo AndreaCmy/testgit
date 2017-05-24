@@ -6,12 +6,10 @@ package com.cmy.controller.test.thread;
 public class Test {
 
     public static void main(String[] args) {
-       TaskRunable taskRunable = new TaskRunable();
-        Thread t  = new Thread(taskRunable);
-        t.start();
-
-        System.out.println("interrupted");
-        t.interrupt();
+      CountOperate c = new CountOperate();
+      Thread t = new Thread(c);
+      t.setName("A");
+      t.start();
 
     }
 }

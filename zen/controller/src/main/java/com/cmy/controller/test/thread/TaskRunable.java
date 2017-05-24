@@ -12,8 +12,9 @@ public class TaskRunable implements Runnable {
                 System.out.println("do work...");
                 Thread.sleep(1000);
         }catch (InterruptedException e){
+            //jvm会清除中断标记
             System.out.println("after catch exception:"+Thread.currentThread().isInterrupted());
-            Thread.currentThread().interrupt();
+            Thread.currentThread().interrupted();
             System.out.println("after set interupt:" + Thread.currentThread().isInterrupted());
         }
     }

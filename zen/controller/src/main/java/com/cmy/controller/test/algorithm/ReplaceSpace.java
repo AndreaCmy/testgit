@@ -66,11 +66,5 @@ public class ReplaceSpace {
         ReplaceSpace.replaceSpace(" hello ");
         ReplaceSpace.replaceSpace(" hello world ");
 
-        List arrayList = new ArrayList<String>();
-        arrayList.add("a");
-        arrayList.add("b");
-        arrayList.set(0, "1");
-
-
     }
 }

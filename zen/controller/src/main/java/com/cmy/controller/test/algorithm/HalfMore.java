@@ -4,6 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * 查找数组中超过一半的元素：
+ * 注意当标准对应的ctn=0时，需要替换标准，并将ctn重置为1
  * Created by mengyingc on 2017/4/25.
  */
 public class HalfMore {
